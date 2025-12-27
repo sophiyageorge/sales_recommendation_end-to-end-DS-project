@@ -3,8 +3,10 @@ import joblib
 import numpy as np
 from pathlib import Path
 
-
+# create app
 app = FastAPI(title="Sales Recommendation API")
+
+#load model
 
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_PATH = BASE_DIR / "model" / "recommender.pkl"
